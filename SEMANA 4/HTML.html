@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+</head>
+<body style="background-color:lightslategray">
+    <header>
+        <img src="/IMG/INCAP.png" width="100" height="100" alt="incap">
+        <h1>LISTAS EN HTML</h1>
+        <h2>MENU NAVEGACION</h2>
+</header>
+<nav>
+<ul>
+    <li type="disc" style="color:rgb(0, 47, 255)">HOME</li>
+    <li type="square">Productos</li>
+    <li type="circle">servicios</li>
+    <li>contacto</li>
+    </ul>
+    </nav>
+    <section>
+        <form action="datos.php"method="post">
+        <fieldset>
+<label >NOMBRE COMPLETO</label>
+<input name="nombre" type="text" placeholder="ingrese su nombre completo" required="">
+<br><br>
+
+<!-- seccion email -->
+<label>E mail</label>
+<input name="email" type="text" placeholder="ingrese su email" required="">
+<br><br>
+
+<!-- seccion contraseña -->
+<label>contraseña</label>
+<input name="contraseña" type="password" placeholder="ingrese su contraseña" required="">
+<br><br>
+
+<!-- seccion honbbies -->
+<label>selecciona tus hobbies: 
+</label>
+<br>
+    <input name="cine" type="checkbox">cine<br>
+    <input name="lectura" type="checkbox">lectura<br>
+    <input name="deporte" type="checkbox">deporte<br>
+<br>
+
+<!-- ESTADO CIVIL -->
+
+<label>Estado civil:</label><br>
+    <input name="estcivil" type="radio" value="casado">casado(a)<br>
+    <input name="estcivil" type="radio" value="soltero">soltero(a)<br>
+    <input name="estcivil" type="radio" value="viudo">viudo(a)<br>
+    <input name="estcivil" type="radio" value="viudo">con ganas de morirme(a)<br>
+<br>
+<br>
+
+<!-- Seleccionar opcion lista -->
+<label>PROGRAMAS TECNICOS</label>
+<select name="select">
+    <option>seleccione programa...</option>
+    <option>sistemas</option>
+    <option>diseño grafico</option>
+    <option>contabilidad</option>
+</select>
+<br>
+<br>
+<label>Tu comentario:</label><br>
+    <textarea name="mensaje" rows="5" cols="40"></textarea>
+<fieldset>
+<br><br>
+
+<!-- seccion de botones formulario submit :  enviar datos cancel : enviar datos cancel : borrar datos ingresados -->
+<button type="submit">Enviar</button>
+<button type="reset">Cancelar</button>
+<br>
+<br>
+</form>
+</section>
+   <!-- seccion de pie  de pagina -->
+<footer>
+    Derechos reservados &copy;2022&#64;NOMBRE STD
+</footer>
+<body>
+<html>
